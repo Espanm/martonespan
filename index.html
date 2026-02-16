@@ -7,10 +7,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
-        body {
+        html, body {
+            height: 100%;
             margin: 0;
             font-family: 'Inter', sans-serif;
             color: #1a1a1a;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
         }
 
         .navbar {
@@ -19,7 +25,9 @@
             text-align: center;
         }
 
-        .navbar a {
+        .navbar a,
+        .navbar a:visited,
+        .navbar a:active {
             color: white;
             text-decoration: none;
             margin: 0 26px;
@@ -29,6 +37,10 @@
 
         .navbar a:hover {
             opacity: 0.75;
+        }
+
+        .main-content {
+            flex: 1;
         }
 
         .container {
@@ -76,12 +88,13 @@
             background-color: #f3f3f3;
             padding: 22px 12px;
             text-align: center;
-            margin-top: 60px;
             font-size: 14px;
             line-height: 1.9;
         }
 
-        .footer a {
+        .footer a,
+        .footer a:visited,
+        .footer a:active {
             color: #0f172a;
             text-decoration: none;
             margin: 0 10px;
@@ -105,25 +118,29 @@
 
 <div class="navbar">
     <a href="index.html">Home</a>
-    <a href="cv.html">CV</a>
     <a href="education.html">Education</a>
-    <a href="projects.html">Projects</a>
     <a href="research.html">Research</a>
+    <a href="projects.html">Projects</a>
+    <a href="cv.html">CV</a>
 </div>
 
-<div class="container">
-    <img src="me.png" alt="Márton Espán">
-    <div class="text">
-        <h1>Márton Espán</h1>
-        <div class="subtitle">PhD Candidate in Economics, Corvinus University of Budapest</div>
+<div class="main-content">
+    <div class="container">
+        <img src="me.png" alt="Márton Espán">
+        <div class="text">
+            <h1>Márton Espán</h1>
+            <div class="subtitle">PhD Candidate in Economics, Corvinus University of Budapest</div>
 
-        <div class="tagline">Researcher in applied macroeconomics, policy measurement, and financial networks.</div>
+            <div class="tagline">
+                Researcher in applied macroeconomics and financial networks.
+            </div>
 
-        <div class="description">
-            I am a first-year PhD candidate in Economics at Corvinus University of Budapest
-            and a methodological expert at the Hungarian Central Statistical Office.
-            My research focuses on financial and macroeconomic networks, with broader 
-            interests in fiscal and monetary policy.
+            <div class="description">
+                I am a first-year PhD candidate in Economics at Corvinus University of Budapest
+                and a methodological expert at the Hungarian Central Statistical Office.
+                My research focuses on financial and macroeconomic networks, with broader 
+                interests in fiscal and monetary policy.
+            </div>
         </div>
     </div>
 </div>
