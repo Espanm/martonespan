@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Márton Espán</title>
 
-    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
@@ -14,7 +13,6 @@
             color: #1a1a1a;
         }
 
-        /* NAVBAR */
         .navbar {
             background-color: #0f172a;
             padding: 18px 0;
@@ -24,16 +22,15 @@
         .navbar a {
             color: white;
             text-decoration: none;
-            margin: 0 30px;
+            margin: 0 26px;
             font-size: 16px;
             font-weight: 400;
         }
 
         .navbar a:hover {
-            opacity: 0.7;
+            opacity: 0.75;
         }
 
-        /* MAIN SECTION */
         .container {
             display: flex;
             align-items: center;
@@ -72,42 +69,42 @@
             margin-top: 25px;
             font-size: 16px;
             line-height: 1.6;
-            max-width: 550px;
+            max-width: 580px;
         }
 
-        /* FOOTER */
         .footer {
             background-color: #f3f3f3;
-            padding: 25px 0;
+            padding: 22px 12px;
             text-align: center;
             margin-top: 60px;
             font-size: 14px;
+            line-height: 1.9;
         }
 
         .footer a {
             color: #0f172a;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 10px;
+            white-space: nowrap;
         }
 
         .footer a:hover {
             text-decoration: underline;
         }
 
-        /* RESPONSIVE */
         @media (max-width: 900px) {
             .container {
                 flex-direction: column;
                 text-align: center;
             }
         }
-
     </style>
 </head>
 
 <body>
 
 <div class="navbar">
+    <a href="index.html">Home</a>
     <a href="cv.html">CV</a>
     <a href="education.html">Education</a>
     <a href="projects.html">Projects</a>
@@ -119,11 +116,12 @@
     <div class="text">
         <h1>Márton Espán</h1>
         <div class="subtitle">PhD Candidate in Economics, Corvinus University of Budapest</div>
-        <div class="tagline">Researcher in applied macroeconomics and financial networks.</div>
+
+        <div class="tagline">Researcher in applied macroeconomics, policy measurement, and financial networks.</div>
 
         <div class="description">
-            I am a first-year PhD candidate in Economics at Corvinus University of Budapest 
-            and a methodological expert at the Hungarian Central Statistical Office. 
+            I am a first-year PhD candidate in Economics at Corvinus University of Budapest
+            and a methodological expert at the Hungarian Central Statistical Office.
             My research focuses on financial and macroeconomic networks, with broader 
             interests in fiscal and monetary policy.
         </div>
@@ -131,11 +129,13 @@
 </div>
 
 <div class="footer">
-    <a href="mailto:marton.espan@stud.uni.corvinus.hu">marton.espan@stud.uni.corvinus.hu</a>
+    <a href="mailto:marton.espan@stud.uni-corvinus.hu">marton.espan@stud.uni-corvinus.hu</a>
     |
     <a href="mailto:Marton.Espan@ksh.hu">Marton.Espan@ksh.hu</a>
     |
-    <a href="https://www.linkedin.com/in/marton-espan/" target="_blank">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/marton-espan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    |
+    <a href="https://github.com/Espanm" target="_blank" rel="noopener noreferrer">GitHub</a>
 </div>
 
 </body>
