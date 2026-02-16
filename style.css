@@ -167,3 +167,88 @@ body {
     text-align: left;
   }
 }
+
+/* ===== EDUCATION PAGE ===== */
+.edu-wrap{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 70px 20px 30px;
+}
+
+.edu-title{
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+}
+
+.edu-subtitle{
+  color: #555;
+  margin: 0 0 22px 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.edu-program{
+  margin-top: 26px;
+}
+
+.edu-program h2{
+  font-size: 18px;
+  margin: 0 0 8px 0;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e6e6e6;
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+.edu-meta{
+  color: #555;
+  font-size: 14px;
+  margin: 0 0 14px 0;
+}
+
+.term{
+  border: 1px solid #efefef;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin: 12px 0;
+  background: #fff;
+}
+
+.term-head{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.term-title{
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.term-date{
+  color: #666;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.course-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 18px;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.course-grid li{
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+@media (max-width: 760px){
+  .term-head{ flex-direction: column; align-items: flex-start; }
+  .course-grid{ grid-template-columns: 1fr; }
+}
